@@ -83,13 +83,9 @@ pagename: employment
                         <p class="js-form-success">Thank you for your application!</p>
                         <!-- END - Form Success Message -->
 
-                        <form method="POST" action="" enctype="multipart/form-data" id="contact-form">
-                            <input type="hidden" name="csrfmiddlewaretoken" value="prD6dbGldaar8wV8zJbPV0QJrT6Yg5ZIsoUWnWBA145ZWQ4UWlozcKQSXkZuFuuh">
-
-                            <!-- START - Form Alert Message -->
-                            <p class="js-form-alert"></p>
-                            <!-- END - Form Alert Message -->
-
+                        <form action="/success.html" method="POST" enctype="multipart/form-data">
+                           
+                        
                             <div class="row">
                                 <div class="medium-6 column">
                                     <input type="text" name="first_name" placeholder="First Name" maxlength="100" required id="id_first_name">
@@ -144,15 +140,12 @@ pagename: employment
                             </div>
                             <label style="color: #fff"><strong>Please Attach Resume(250Mb Limit
                                 <span class="req">*</span>)</strong>
+                                <input type="file" name="upload">
                             </label>
-                            <br/>
-                            <input type="file" name="resume" id="id_resume">
-                            <input type="hidden" name="g-recaptcha-response" id='recaptcha'>
-                            <button class="g-recaptcha"
-                                    data-sitekey="6LdiOaIcAAAAAGAoyuWocz0hVSEsQ3WAeZOkL-mj"
-                                    data-callback='submitContactForm'
-                                    data-action='submit' type="submit"
-                            >SUBMIT<span>
+                          <input type="hidden" name="inbox_key" value="epic-employment-form">
+                          <input type="hidden" name="_to" value="carlos@accoladesit.com">
+                          <input type="text" name="_gotcha" style="display: none;">
+                            <button type="submit">SUBMIT<span>
                                 <em class="fa fa-chevron-right"></em></span>
                             </button>
                         </form>
