@@ -1,0 +1,9 @@
+- question: "How do I buy my EPIC card?"
+  answer: "You can purchase an EPIC card online (under the Purchase Play Card tab) or when you come in to play!"
+  weight: 1
+- question: "How do I sign my waiver?"
+  answer: "You can sign your waiver online (under the Safety Waiver tab) or when you come in to play!"
+  weight: 3
+- question: "I have EPIC tickets, how do I redeem them?"
+  answer: "Bring your EPIC tickets in and we will put their value on an EPIC card."
+  weight: 2

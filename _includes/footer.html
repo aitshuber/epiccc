@@ -1,0 +1,108 @@
+	<!--end section main-->
+
+
+<section class="map-container">
+	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3446.552817349552!2d-92.0664066500834!3d30.24982631570827!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86249be254f16261%3A0x5fef00d9fb94dd7!2s130+N+Ambassador+Caffery+Pkwy%2C+Scott%2C+LA+70583!5e0!3m2!1sen!2sus!4v1496161549692"></iframe>
+</section>
+
+<!--
+<script type="text/javascript" src="https://app.locbox.com/website_plugins/lb-29576a2402a98283b82154950747fcc521a36eac.js"></script>
+<script src="https://www.smartwaiver.com/m/webpl/f.js?webpl_waiver=593f2c191565c&webpl_title=Sign our waiver&webpl_align=Right&webpl_fontsize=20&webpl_background=%233ec612&webpl_fontcolor=%23ffffff&webpl_font=Verdana" type="text/javascript"></script>
+-->
+
+<!-- Modal end -->
+
+	<!-- Modal -->
+	<a href="#" data-reveal-id="NotificationModal" style="display:none">Click Me For A Modal</a>
+
+	<div id="NotificationModal" class="reveal-modal" data-reveal aria-labelledby="modalTitle" aria-hidden="true"
+		 role="dialog">
+
+		<h4>Hours</h4>
+		{% for item in site.data.company_details.hours %}
+			<li>{{ item.day }}</li>
+		{% endfor %}
+		
+		<a class="close-reveal-modal" aria-label="Close">&#215;</a>
+	</div>
+
+	<script>
+		$(document).ready(function () {
+			$('#NotificationModal').foundation('reveal', 'open');
+		});
+	</script>
+
+
+<footer class="scrollme">
+	<div class="footer-top">
+		<div class="row">
+			<div class="large-6 medium-6 column tow_column">
+				<div class="medium-5 small-6 column">
+					<div class="footer-menu">
+						<ul>
+							<li><a href="EpicEntertainment.html" target="">Home</a>
+							</li>
+							<li><a href="about-epicentertainment.html" target="">About Us</a>
+							</li>
+							<li><a href="Epic-Entertainment-Attractions.html" target="">Attractions</a>
+							</li>
+							<li><a href="Epic-Entertainment-faqs.html" target="">FAQs</a>
+							</li>
+							<li><a href="epic-entertainment-safety-waiver.html" target="">Safety
+								Waiver</a>
+							</li>
+							<li><a href="contact-Epic-Entertainment.html" target="">Contact Us</a>s
+							</li>
+
+						</ul>
+					</div>
+				</div>
+				<div class="medium-7 small-6 column">
+					<div class="contact_info">
+						<div class="con_info">
+							<h6>ADDRESS</h6>
+							<p>130 North Ambassador Caffery Parkway
+								<br/> Scott, La 70583</p>
+						</div>
+						<div class="con_info">
+							<h6>PHONE NUMBER</h6>
+							<p><a href="tel:3374566556">(337) 456-6556</a></p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="large-6 medium-6 column tow_column">
+				<div class="medium-5 small-6 column">
+					<h6>FOLLOW US</h6>
+					<div class="social-menu">
+						<ul>
+							{% for item in site.data.company_details.social %}
+							  <li><a href="{{ item.link }}" target="_blank"><em
+							  class="fa {{ item.icon }}"></em> {{ item.name }}</a></li>
+							  {% endfor %}
+						
+						</ul>
+					</div>
+				</div>
+				<div class="medium-7 small-6 column">
+					<h6>HOURS OF OPERATION</h6>
+					<div class="about_info">
+						<p style="color: white; line-height: 37px">
+							<strong style="color: rgb(102,255,0); "><u>HOURS:</u></strong>
+							{% for item in site.data.company_details.hours %}
+								<br/><strong style="color: rgb(102,255,0);">{{ item.day }}</strong>
+							{% endfor %}
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="footer-bottom">
+		<div class="row">
+			<p class="margin-b-0">&#169;<span class="footer-bottom-bold"> EPIC Entertainment</span> {{ site.time | date: '%Y' }}. All Rights
+				Reserved. Site designed and powered by <a href="http://accoladesit.com" target="_blank"
+														  title="Accolades - Website Design Lafayette Louisiana">Accolades IT</a></p>
+		</div>
+	</div>
+</footer>

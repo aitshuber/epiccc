@@ -1,0 +1,174 @@
+---
+title: Digital Twin Studios
+description: >-
+  DTSXR is a learning development company specializing in immersive and
+  interactive simulations for multiple industries.
+keywords: >-
+  Digital Twins Studio, dtsxr, dts, Learning Devlopment, interactive
+  simulations, unity, unity developer, create the creator, unity create the
+  creator, multiple industries simulation developer,real-time development
+  platform, real-time development, Vr visualization, AR visualization, 3d
+  visualization, 3d platform, 2d platform, Vr platform, AR platform, 3d
+  real-time, AR real-time, 2d Development, 3d Development, AR Development, VR
+  Development
+layout: default
+pagename: contact
+---
+
+
+    <div style="background-color: #3ec612;display: none" data-alert class="alert-box">
+        <a href="#">
+            <h4 style="text-align: center; ">We will be open with our regular hours starting June 5th</h4>
+        </a>
+        <a href="#" class="close">&times;</a>
+    </div>
+    <!-- //header.row -->
+
+
+    <div class="inner-banner about-page"><img src="styles/assets/img/Activities/Arcade.jpg"
+                                              alt="slide 3"/>
+        <div class="orbit-caption wow " data-wow-duration="1s">
+            <div class="row">
+                <div class="wc-rectangle ">
+
+
+                    <h2 style="font-size: 52px; color:#6ff44a; line-height:350%">Contact</h2>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--end section slider-->
+
+
+    <div class="contact-main">
+        <div class="row">
+            <div class="medium-10 push-1 columns">
+                <h1 style="color: white ;text-align: center ; font-size: 25px; margin-bottom: 30px; text-transform: uppercase">
+                    Contact <span style="color:#6ff44a">EPIC Entertainment</span><br/> Fill out the form below or give
+                    us a call</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="large-12 columns">
+                <div class="contact-detail">
+                    <div class="medium-6 column">
+                        <div class="contact-title">
+                            <h2><span> EPIC </span> Entertainment</h2>
+                            <h5 style="color: #fff">Hours of Operation<br/>
+                               <p style="color: white; line-height: 37px">
+                                 <strong style="color: rgb(102,255,0); "><u>HOURS:</u></strong>
+                                 {% for item in site.data.company_details.hours %}
+                                   <br/><strong style="color: rgb(102,255,0);">{{ item.day }}</strong>
+                                 {% endfor %}
+                               </p>
+                            </h5>
+                        </div>
+                    </div>
+                    <div class="medium-6 column">
+                        <div class="row">
+                            <div class="medium-8 small-7 column">
+                                <div class="phone-detail">
+                                    <p><span><em class="fa fa-phone"></em></span> <a href="tel:{{ site.data.company_details.phone }}">{{ site.data.company_details.phone }}</a>
+                                    </p>
+                                    <p><span><em class="fa fa-envelope"></em></span> <a
+                                            href="mailto:{{ site.data.company_details.email }}">{{ site.data.company_details.email }}</a>
+                                    </p>
+                                    <p><span><em class="fa fa-location-arrow"></em></span>130 North Ambassador Caffery
+                                        Parkway</p>
+                                </div>
+                            </div>
+                            <div class="medium-4 small-5 column">
+                                <div class="marker-icon  wow fadeInDown" data-wow-duration="2s"><em
+                                        class="fa fa-map-marker"></em></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="con-form-map">
+
+                <div class="medium-6 column">
+                    <div class="">
+
+                        <!--Form for Computer-->
+
+                        <!-- START - Form Success Message -->
+                        <p class="js-form-success">Thank you for contacting us!</p>
+                        <!-- END - Form Success Message -->
+
+                        <form method="post" enctype="multipart/form-data"
+                              id="contact-form">
+                            <input type="hidden" name="csrfmiddlewaretoken" value="0a9fvgCHUK0wo8VJlYYhWqqjJnirjWxq37q5F1xWIEV4cs4vIAb1daqsfObXIl2Z">
+                            <!-- START - Form Alert Message -->
+                            <p class="js-form-alert"></p>
+                            <!-- END - Form Alert Message -->
+                            <div class="row">
+                                <div class="medium-12"><input type="text" name="first_name" placeholder="First Name" maxlength="100" required id="id_first_name"></div>
+                                <div class="medium-12"><input type="text" name="last_name" placeholder="Last Name" maxlength="100" required id="id_last_name"></div>
+                            </div>
+                            <div class="row">
+                                <div class="medium-12"><input type="number" name="phone_number" placeholder="Phone Number" required id="id_phone_number"></div>
+                            </div>
+                            <div class="row">
+                                <div class="medium-12"><input type="email" name="email" placeholder="Email" required id="id_email"></div>
+                            </div>
+                            <div class="row">
+                                <textarea name="message" cols="40" rows="10" placeholder="Message" maxlength="500" required id="id_message">
+</textarea>
+                            </div>
+                            <input type="hidden" name="g-recaptcha-response" id='recaptcha'>
+                            <div class="row">
+                                <button class="g-recaptcha"
+                                        data-sitekey="6LdiOaIcAAAAAGAoyuWocz0hVSEsQ3WAeZOkL-mj"
+                                        data-callback="submitContactForm"
+                                        data-action='submit'
+                                        id="form-button"
+                                        type="submit">SUBMIT
+                                    <span>
+	                                            		<em class="fa fa-chevron-right"></em>
+	                                            	</span>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+
+                <div class="medium-6 column">
+                    <div class="contact-map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3446.552817349552!2d-92.0664066500834!3d30.24982631570827!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86249be254f16261%3A0x5fef00d9fb94dd7!2s130+N+Ambassador+Caffery+Pkwy%2C+Scott%2C+LA+70583!5e0!3m2!1sen!2sus!4v1496161549692"></iframe>
+                    </div>
+                    <div class="contact-social">
+                        <ul>
+                            <li>
+                                <a href="https://www.facebook.com/EPICEntertainment337/" class="fb"><em
+                                        class="fa fa-facebook"></em></a>
+                            </li>
+                            <li>
+                                <a href="https://twitter.com/EPIC337" class="twit"><em class="fa fa-twitter"></em></a>
+                            </li>
+                            <li>
+                                <a href="https://www.instagram.com/epic337/" class="insta"><em
+                                        class="fa fa-instagram"></em></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <!--end section main-->
+
+
+    <script src="https://www.smartwaiver.com/m/webpl/f.js?webpl_waiver=593f2c191565c&amp;webpl_title=Sign%20our%20waiver&amp;webpl_align=Right&amp;webpl_fontsize=20&amp;webpl_background=%233ec612&amp;webpl_fontcolor=%23ffffff&amp;webpl_font=Verdana"
+            type="text/javascript"></script>
+
+

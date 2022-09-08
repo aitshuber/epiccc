@@ -1,0 +1,68 @@
+---
+title: Digital Twin Studios
+description: >-
+  DTSXR is a learning development company specializing in immersive and
+  interactive simulations for multiple industries.
+keywords: >-
+  Digital Twins Studio, dtsxr, dts, Learning Devlopment, interactive
+  simulations, unity, unity developer, create the creator, unity create the
+  creator, multiple industries simulation developer,real-time development
+  platform, real-time development, Vr visualization, AR visualization, 3d
+  visualization, 3d platform, 2d platform, Vr platform, AR platform, 3d
+  real-time, AR real-time, 2d Development, 3d Development, AR Development, VR
+  Development
+layout: default
+pagename: faqs
+---
+<div class="inner-banner about-page"><img src="styles/assets/img/Activities/indoor-playground-dark.jpg"
+                                          alt="Epic Entertainment Zipline Lafayette"/>
+    <div class="orbit-caption wow " data-wow-duration="1s">
+        <div class="row">
+            <div class="wc-rectangle ">
+
+
+                <h2 style="font-size: 52px; color:#6ff44a; line-height:350%">FAQs</h2>
+
+
+            </div>
+        </div>
+    </div>
+</div>
+<section class="interior_content">
+    <div class="row">
+        <h1 style="text-align: center; font-size: 25px; margin-bottom: 30px; text-transform: uppercase">Find answers and
+            general information quickly about Epics attractions and procedures.</h1>
+    </div>
+    <div class="row">
+        <section class="main">
+            <div class="medium-12 columns">
+              {% for item in site.data.faq %}
+            <button class="accordion">{{item.question}}</button>
+            <div class="panel">
+              <p>{{item.answer}}</p>
+            </div>
+            {% endfor %}
+          
+          
+
+              <script>
+              var acc = document.getElementsByClassName("accordion");
+              var i;
+              
+              for (i = 0; i < acc.length; i++) {
+                acc[i].addEventListener("click", function() {
+                  this.classList.toggle("active");
+                  var panel = this.nextElementSibling;
+                  if (panel.style.display === "block") {
+                    panel.style.display = "none";
+                  } else {
+                    panel.style.display = "block";
+                  }
+                });
+              }
+              </script>
+            </div>
+        </section>
+    </div>
+</section>
+

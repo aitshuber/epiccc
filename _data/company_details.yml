@@ -1,0 +1,20 @@
+email: EpicEntertainmentFun@gmail.com
+logo_image: styles/assets/img/epiclogo.png
+phone: 337-456-6556
+social:
+  - name: instagram
+    link: https://www.instagram.com/epic337/
+    icon: fa-instagram
+  - name: facebook
+    link: https://www.facebook.com/EPICEntertainment337/
+    icon: fa-facebook
+  - name: twitter
+    link: https://twitter.com/EPIC337
+    icon: fa-twitter
+hours:
+  - day: Monday - Thursday Closed
+  - day: Friday 5pm - 9pm
+  - day: Saturday 11am - 10pm
+  - day: Sunday 12pm - 6pm
+
+ 

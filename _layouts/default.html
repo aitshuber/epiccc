@@ -1,0 +1,24 @@
+<!DOCTYPE HTML>
+<html lang="en" class="no-js">
+<!--<![endif]-->
+<!-- BC_OBNW -->
+<head>
+{% include head.html %}
+
+ {% capture seo %}
+   {% seo %}
+   <meta name="keywords" content="{{page.keywords}}">
+   {% endcapture %}
+   {{seo | remove: "Jekyll"}}
+
+</head>
+<header>
+	{% include nav.html %}
+  
+</header>
+	<body>
+	 {{ content }}
+	 {% include footer.html %}   
+	 {% include scripts.html %}       
+	</body>
+</html>
