@@ -17,7 +17,11 @@
 
 	<div id="NotificationModal" class="reveal-modal" data-reveal aria-labelledby="modalTitle" aria-hidden="true"
 		 role="dialog">
-
+   {% for item in site.data.monthly_special %}
+                            <a href="{{item.image}}" target="_blank"><img
+                             src="{{item.image}}" border="0"
+                             alt=""/></a>
+                             {% endfor %}
 		<h4>Hours</h4>
 		{% for item in site.data.company_details.hours %}
 			<li>{{ item.day }}</li>
