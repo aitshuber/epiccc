@@ -1,5 +1,5 @@
 - month: september
   image: /styles/EPIC-Flyer-september.png
   weight: 1
-  enabled: true
+  enabled: false
 
