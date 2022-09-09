@@ -70,6 +70,7 @@ pagename: pricing
         <div class="columns medium-12">
             <hr>
         </div>
+         {% if site.data.monthly_special.enabled == 'true' %}
         <div class="row">
             <div class="large-12 medium-12 small-12 columns features_content">
                 <div class="features_content_area">
@@ -96,6 +97,7 @@ pagename: pricing
                     </div>
                 </div>
             </div>
+        {% endif %}
     </section>
 
 
