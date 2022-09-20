@@ -97,7 +97,7 @@ pagename: contact
                         <form action="https://formspree.io/f/xrgdeyvr" method="POST">
                           <script>
                                 grecaptcha.ready(function () {
-                                    grecaptcha.execute('{6LfBsfIhAAAAAEuUTSDd4Dj4C3eGMInUn00uNF3_}', {action: 'submit'}).then(function (token) {
+                                    grecaptcha.execute('6LfBsfIhAAAAAEuUTSDd4Dj4C3eGMInUn00uNF3_', {action: 'submit'}).then(function (token) {
                                         console.info("got token: " + token);
                                         document.getElementById('g-recaptcha-response').value = token;
                                     });
