@@ -93,7 +93,7 @@ pagename: contact
                         <!-- START - Form Success Message -->
                         <p class="js-form-success">Thank you for contacting us!</p>
                         <!-- END - Form Success Message -->
-
+                          <script src="https://www.google.com/recaptcha/api.js" async defer></script>
                         <form action="https://formspree.io/f/xrgdeyvr" method="POST" enctype="multipart/form-data" id="contact-form">
                             <!-- START - Form Alert Message -->
                             <p class="js-form-alert"></p>
@@ -112,14 +112,9 @@ pagename: contact
                                 <textarea name="message" cols="40" rows="10" placeholder="Message" maxlength="500" required id="id_message">
 </textarea>
                             </div>
-                            <input type="hidden" name="g-recaptcha-response" id='recaptcha'>
+                            <div class="g-recaptcha" data-sitekey="6LfBsfIhAAAAAEuUTSDd4Dj4C3eGMInUn00uNF3_"></div>
                             <div class="row">
-                                <button class="g-recaptcha"
-                                        data-sitekey="6LdiOaIcAAAAAGAoyuWocz0hVSEsQ3WAeZOkL-mj"
-                                        data-callback="submitContactForm"
-                                        data-action='submit'
-                                        id="form-button"
-                                        type="submit">SUBMIT
+                                <button type="submit" value="Submit">SUBMIT
                                     <span>
 	                                            		<em class="fa fa-chevron-right"></em>
 	                                            	</span>
@@ -128,7 +123,15 @@ pagename: contact
                         </form>
                     </div>
                 </div>
-
+<script>
+  // javascript
+window.onload = function() { 
+  var el = document.getElementById('g-recaptcha-response'); 
+  if (el) { 
+    el.setAttribute('required', 'required'); 
+  } 
+}
+</script>
 
                 <div class="medium-6 column">
                     <div class="contact-map">
