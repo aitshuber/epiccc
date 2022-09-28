@@ -174,7 +174,12 @@ border-color:#c0392b
     -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s !important;
     transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s !important;
 }
+.home-video2 {display:none;}
 
+@media only screen and (max-width: 1024px) {
+    .home-video2 {display:block;}
+    .home-video {display:none;}
+}
 .green{
 	color: #3ec612;
 }    
