@@ -17,7 +17,7 @@
 
 	<div id="NotificationModal" class="reveal-modal" data-reveal aria-labelledby="modalTitle" aria-hidden="true"
 		 role="dialog">
-	  {% if site.data.monthly_special.enabled %}
+	  {% if site.data.monthly_special %}
       {% for item in site.data.monthly_special %}
        <img src="{{item.image}}" border="0" alt="" style="width:50%"/>
       {% endfor %}
