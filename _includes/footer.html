@@ -17,11 +17,13 @@
 
 	<div id="NotificationModal" class="reveal-modal" data-reveal aria-labelledby="modalTitle" aria-hidden="true"
 		 role="dialog">
-	  {% if site.data.monthly_special.enabled == "true" %}
+	 
       {% for item in site.data.monthly_special %}
+       {% if item.enabled == "true" %}
        <img src="{{item.image}}" border="0" alt="" style="width:50%"/>
+      {% endif %}
       {% endfor %}
-    {% endif %}
+
 		<h4>Hours</h4>
 		{% for item in site.data.company_details.hours %}
 			<li>{{ item.day }}</li>
