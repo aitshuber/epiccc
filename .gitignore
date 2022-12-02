@@ -2,3 +2,7 @@
 _site/
 
 .jekyll-cache/
+
+styles/assets/.DS_Store
+
+.DS_Store
