@@ -12,14 +12,23 @@ pagename: home
             <!-- desktop code -->
             <!-- video section of slider -->
                {% for item in site.data.home-rotator %}
-                <video class="fullscreen-video noloop home-video" poster="{{item.image}}" id="bgvid" preload="none"  autoplay="autoplay" controls muted >
-                    <source src="{{item.video}}" type="video/mp4">
-                </video>
+               <div class="iframe-wrapper"> 
+              <iframe class="homevideo" allow="autoplay" src="https://player.vimeo.com/video/780883677?muted=1?controls=0?background=1?title=0&amp;byline=0&amp;color=3a6774&amp;autoplay=1&amp;loop=1"
+               width="1500" height="540" frameborder="0" webkitallowfullscreen
+               mozallowfullscreen allowfullscreen id="vimeo"></iframe>  </div>
+
+              <script src="https://player.vimeo.com/api/player.js"></script>
+              <script>
+                window.onload = function() {
+                  var vimeoPlayer = new Vimeo.Player(document.getElementById('vimeo'));
+                  vimeoPlayer.play();
+                }
+              </script>
                 {% endfor %}
                 <!--  end video section of slider -->
                 <li class="home-video" style="height: 700px">
                 </li>
-            <li class="home-video2"><img src="/styles/assets/img/Activities/Arcade.jpg" />
+            <li class="home-video2"><img src="/styles/assets/img/mobile-banner.jpg" />
             </li>
         </ul>
         <a href="#main_categori" class="arrow-down"><em class="fa fa-chevron-down BounceTop arrow-ani"></em></a>
