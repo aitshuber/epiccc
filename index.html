@@ -12,7 +12,7 @@ pagename: home
             <!-- desktop code -->
             <!-- video section of slider -->
                {% for item in site.data.home-rotator %}
-                <video class="fullscreen-video noloop home-video" poster="{{item.image}}" id="bgvid"  autoplay="autoplay" controls muted>
+                <video class="fullscreen-video noloop home-video" poster="{{item.image}}" id="bgvid" preload="none"  autoplay="autoplay" controls muted >
                     <source src="{{item.video}}" type="video/mp4">
                 </video>
                 {% endfor %}
