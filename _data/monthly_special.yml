@@ -1,4 +1,4 @@
-- month: January
-  image: /uploads/epic-january-special-facebook-cover.png
+- month: February
+  image: /uploads/epic-february-banner.png
   weight: 1
   enabled: true
