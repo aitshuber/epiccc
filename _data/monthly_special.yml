@@ -1,4 +1,4 @@
-- month: March
-  image: /uploads/march-epic-banner.png
+- month: April
+  image: /uploads/epic-april-banner.png
   weight: 1
   enabled: true
