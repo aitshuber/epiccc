@@ -15,9 +15,21 @@ ganalytics: UA-48421544-1
 social: "https://twitter.com/javasquare \nhttps://www.facebook.com/javasquare
   \nhttps://www.instagram.com/javasquare"
 plugins:
-- jekyll-paginate
-- jekyll-sitemap
-- jekyll-feed
-- jekyll-seo-tag
-- jekyll-archives
-- useragent
+    - jekyll-sitemap
+    - jekyll-feed
+    - jekyll-seo-tag
+    - jekyll-archives
+    - jekyll-algolia
+  # Excluded items can be processed by explicitly listing the directories or
+  #
+  # exclude:
+  #   - .sass-cache/
+  #   - .jekyll-cache/
+  #   - gemfiles/
+  #   - Gemfile
+  #   - Gemfile.lock
+  #   - node_modules/
+  #   - vendor/bundle/
+  #   - vendor/cache/
+  #   - vendor/gems/
+  #   - vendor/ruby/
