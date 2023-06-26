@@ -27,9 +27,8 @@ pagename: home
         <a href="#main_categori" class="arrow-down"><em class="fa fa-chevron-down BounceTop arrow-ani"></em></a>
     </div>
     <!--end section slider-->
-
     <section class="main-categories" id="main_categori">
-        <div class="medium-3 small-6 left wow flipInX" data-wow-duration="1s">
+        <div class="medium-4 small-6 left wow flipInX" data-wow-duration="1s">
             <div class="sport-cat">
                 <figure><img src="styles/assets/img/Activities/Arcade%202.7.20%202.jpg" class="editable"
                              alt="Epic Entertainment Zipline Fun">
@@ -38,7 +37,7 @@ pagename: home
                     <span>attractions</span></a><em class="fa fa-chevron-right">&nbsp;</em></div>
             </div>
         </div>
-        <div class="medium-3 small-6 left wow flipInX" data-wow-duration="1s" data-wow-iteration="1">
+        <div class="medium-4 small-6 left wow flipInX" data-wow-duration="1s" data-wow-iteration="1">
             <div class="sport-cat">
                 <figure><img src="styles/assets/img/Activities/Inflatablegames.jpg" class="editable"
                              alt="Epic Entertianment - Gyrocscope">
@@ -47,6 +46,7 @@ pagename: home
                         class="fa fa-chevron-right">&nbsp;</em></div>
             </div>
         </div>
+        {% comment %}
         <div class="medium-3 small-6 left wow flipInX" data-wow-duration="1s" data-wow-iteration="1">
             <div class="sport-cat">
                 <figure><img src="styles/assets/img/epic-laser.png" class="editable" alt="Epic Entertainment - LaserTag">
@@ -55,7 +55,8 @@ pagename: home
                         class="fa fa-chevron-right">&nbsp;</em></div>
             </div>
         </div>
-        <div class="medium-3 small-6 left wow flipInX" data-wow-duration="1s" data-wow-iteration="1">
+        {% endcomment %}
+        <div class="medium-4 small-6 left wow flipInX" data-wow-duration="1s" data-wow-iteration="1">
             <div class="sport-cat">
                 <figure><img src="styles/assets/img/Activities/Arcade%202.7.20%201.jpg" class="editable"
                              alt="Epic Entertainment - Large Slide">
@@ -76,9 +77,9 @@ pagename: home
                         <li>
                         <li><img src="styles/assets/img/Activities/grove-gardians.jpg" class="editable"
                                  alt="Gyroscope fun for all"/>
-                            <div class="pop-up"><a class="youtube editable"
-                                                   href="{{ site.baseurl }}/HOLOGATE_trailer_hype_01.mp4"><em
-                                    class="fa fa-caret-right"></em></a></div>
+                          <div class="pop-up"><a class="mklbItem" data-video-src="styles/assets/video/VR.mp4">
+                            <em class="fa fa-caret-right"></em></a></div>
+                                 
                         </li>
                     </ul>
                     <div class="dot">&nbsp;</div>
@@ -94,13 +95,15 @@ pagename: home
                         as fists in the digital world, and they must hit the oncoming notes with their fists. This game
                         is
                         extremely entertaining for spectators, who get to watch 4 players all dance, duck, and punch in
-                        unison.</p> <a href="{{ site.baseurl }}/activities-page-ride-gallery/groove-guardians-1"
+                        unison.</p> <a href="{{ site.baseurl }}/Epic-Entertainment-Attractions.html"
                                        class="button split editable">LEARN MORE <span><em
                         class="fa fa-chevron-right">&nbsp;</em></span></a>
                 </div>
             </div>
         </div>
     </section>
+  
+
     <!--Groove Guardians-->
     <section class="mountain_skating">
         <div class="row">
@@ -110,8 +113,7 @@ pagename: home
                     <ul class="overview">
                         <li>
                         <li><img src="/styles/NewGallery/IMG_3126.JPG" class="editable" alt="Gyroscope fun for all"/>
-                            <div class="pop-up"><a class="youtube"
-                                                   href="{{ site.baseurl }}/_assets/img/EPIC_NOW%20OPEN_.mp4"><em
+                            <div class="pop-up"><a class="mklbItem" data-video-src="styles/assets/video/clip-n-climb.mp4"><em
                                     class="fa fa-caret-right"></em></a></div>
                         </li>
                         </li>
@@ -130,7 +132,7 @@ pagename: home
                         our family for fun, food and excitement!! We are a locally, family owned business and are
                         excited to
                         bring this kind of fun
-                        to our community.</p> <a href="about-epicentertainment.html" class="button split">LEARN
+                        to our community.</p> <a href="/about-epicentertainment.html" class="button split">LEARN
                     MORE <span><em class="fa fa-chevron-right">&nbsp;</em></span></a>
                 </div>
             </div>
@@ -140,7 +142,7 @@ pagename: home
         <div class="large-12 columns">
             <div class="row wow">
                 <h2 class="h2-heading editable"><span>EPIC Entertainment </span> Indoor Family Entertainment Center</h2> <a
-                    href="Epic-Entertainment-Attractions.html" class="button but-border editable">CHECK OUT OUR
+                    href="/Epic-Entertainment-Attractions.html" class="button but-border editable">CHECK OUT OUR
                 ATTRACTIONS</a></div>
         </div>
     </section>
