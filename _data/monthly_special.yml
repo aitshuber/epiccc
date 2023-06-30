@@ -1,4 +1,4 @@
-- month: June
-  image: /uploads/epic-june-banner.png
+- month: July
+  image: /uploads/epic-banner-july.png
   weight: 1
   enabled: true
