@@ -2,12 +2,12 @@ email: EpicEntertainmentFun@gmail.com
 logo_image: styles/assets/img/epiclogo.png
 phone: 337-456-6556
 social:
-  - name: instagram
-    link: https://www.instagram.com/epicfamilyentertainmentcenter/
-    icon: fa-instagram
   - name: facebook
     link: https://www.facebook.com/EPICFamilyEntertainmentCenter/
     icon: fa-facebook
+  - name: instagram
+    link: https://www.instagram.com/epicfamilyentertainmentcenter/
+    icon: fa-instagram
 hours:
   - day: Monday - Wednesday Closed
   - day: Thursday 2pm - 9pm

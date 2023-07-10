@@ -1,0 +1,20 @@
+<section class="main-Subscribe">
+	<div class="row">
+		<div class="large-12 columns">
+			<h2 class="h2-heading  wow bounceInDown editable" data-wow-duration="1s">
+				<span>EPIC entertainment. EPIC fun. </span> Subscribe to our social media </h2>
+			<p class="editable">Stay updated on what's to come!</p>
+			<div class="wow bounceInUp" data-wow-duration="1s">
+			 <div class="contact-social" style="padding-right: 40% !important">
+				 <ul>
+					 {% for item in site.data.company_details.social %}
+					 <li><a href="{{item.link}}" target="_blank" {% if item.name == "facebook" %}class="fb" {% else %}class="insta"{% endif %}><em
+							 class="fa {{item.icon}}"></em></a></li>
+					{% endfor %}
+					
+				 </ul>
+			 </div>
+			</div>
+		</div>
+	</div>
+</section>
