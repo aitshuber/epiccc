@@ -274,3 +274,8 @@ ol.bullet li{ list-style: decimal;}
       transform: translate(-50%, -50%);
     }
   }
+.crt-widget.crt-widget-branded .crt-logo{
+    display: none !important;
+    visibility: hidden !important;
+    color: white !important;
+  }
