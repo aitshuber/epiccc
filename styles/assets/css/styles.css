@@ -108,7 +108,7 @@ nav.top-bar{background:none;width:auto; line-height:inherit;height:85px}
 
 /*========== 	 Home Rotator	 ==========*/
 .rotator .row{max-width:1350px}
-.rotator{width:100%; float:left;position:relative;}
+.rotator{width:100%; float:left;position:relative;height: 600px;overflow: hidden;}
 .rotator ul{width:100%; float:left;height:600px;margin:0px 0 0px 0;position:relative;}
 .rotator ul li img{width:100%; float:left;max-width:100%; display:block;min-height:450px;}
 .home-orbit-caption {width:100%;color: white;text-align: center;  position: absolute;top: 20%;background: none;left: 0%;padding:0 8px;margin:0 auto}
@@ -995,6 +995,7 @@ h5{font-size: 22px}
 }
 	
 @media  (max-width: 991px) {
+	.rotator{width:100%; float:left;position:relative;height: auto;overflow: hidden;}
 .primary_navigation{text-align:center;}
 .top-bar-section{width:100%; float:left;text-align:center;margin:0 auto;}
 .top-bar-section ul{float:none;display:inline-block}

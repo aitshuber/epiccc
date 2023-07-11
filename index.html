@@ -8,27 +8,13 @@ layout: default
 pagename: home
 ---
     <div class="rotator">
-        <ul class="home-rotator">
-            <!-- desktop code -->
-            <!-- video section of slider -->
-               {% for item in site.data.home-rotator %}
-               <div class="background-overlay">
-                 <video data-video playsinline autoplay muted style="max-height:65vh!important;object-fit: cover;width:100%">
-                   <source src="/styles/assets/epicentertainmentcenterv2.mp4" type="video/mp4" />
-                 </video>
-               </div>
-                {% endfor %}
-                <!--  end video section of slider -->
-                <li class="home-video" style="height: 700px">
-                </li>
-            <li class="home-video2"><img src="/styles/assets/img/mobile-banner.jpg" />
-            </li>
-        </ul>
+          <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/780883677?background=1" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="EpicEntertainmentCenterV2"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+              
         <a href="#main_categori" class="arrow-down"><em class="fa fa-chevron-down BounceTop arrow-ani"></em></a>
     </div>
     <!--end section slider-->
     <section class="main-categories" id="main_categori">
-        <div class="medium-4 small-6 left wow flipInX" data-wow-duration="1s">
+        <div class="medium-4 small-12 left wow flipInX" data-wow-duration="1s">
             <div class="sport-cat">
                 <figure><img src="styles/assets/img/Activities/Arcade%202.7.20%202.jpg" class="editable"
                              alt="Epic Entertainment Zipline Fun">
@@ -37,7 +23,7 @@ pagename: home
                     <span>attractions</span></a><em class="fa fa-chevron-right">&nbsp;</em></div>
             </div>
         </div>
-        <div class="medium-4 small-6 left wow flipInX" data-wow-duration="1s" data-wow-iteration="1">
+        <div class="medium-4 small-12 left wow flipInX" data-wow-duration="1s" data-wow-iteration="1">
             <div class="sport-cat">
                 <figure><img src="styles/assets/img/Activities/Inflatablegames.jpg" class="editable"
                              alt="Epic Entertianment - Gyrocscope">
@@ -56,7 +42,7 @@ pagename: home
             </div>
         </div>
         {% endcomment %}
-        <div class="medium-4 small-6 left wow flipInX" data-wow-duration="1s" data-wow-iteration="1">
+        <div class="medium-4 small-12 left wow flipInX" data-wow-duration="1s" data-wow-iteration="1">
             <div class="sport-cat">
                 <figure><img src="styles/assets/img/Activities/zero-shock.jpg" class="editable"
                              alt="Epic Entertainment - Large Slide">
