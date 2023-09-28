@@ -1,4 +1,4 @@
-- month: September
-  image: /uploads/september.png
+- month: October
+  image: /uploads/october.png
   weight: 1
   enabled: true
