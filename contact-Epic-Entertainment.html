@@ -94,37 +94,7 @@ pagename: contact
                         <p class="js-form-success">Thank you for contacting us!</p>
                         <!-- END - Form Success Message -->
                           <script src="https://www.google.com/recaptcha/api.js?render=6LfBsfIhAAAAAEuUTSDd4Dj4C3eGMInUn00uNF3_"></script>
-                        <form action="https://formspree.io/f/xrgdeyvr" method="POST">
-                          <script>
-                                grecaptcha.ready(function () {
-                                    grecaptcha.execute('6LfBsfIhAAAAAEuUTSDd4Dj4C3eGMInUn00uNF3_', {action: 'submit'}).then(function (token) {
-                                        console.info("got token: " + token);
-                                        document.getElementById('g-recaptcha-response').value = token;
-                                    });
-                                });
-                            </script>
-                            <!-- START - Form Alert Message -->
-                            <p class="js-form-alert"></p>
-                            <!-- END - Form Alert Message -->
-                            <div class="row">
-                                <div class="medium-12"><input type="text" name="first_name" placeholder="First Name" maxlength="100" required id="id_first_name"></div>
-                                <div class="medium-12"><input type="text" name="last_name" placeholder="Last Name" maxlength="100" required id="id_last_name"></div>
-                            </div>
-                            <div class="row">
-                                <div class="medium-12"><input type="number" name="phone_number" placeholder="Phone Number" required id="id_phone_number"></div>
-                            </div>
-                            <div class="row">
-                                <div class="medium-12"><input type="email" name="email" placeholder="Email" required id="id_email"></div>
-                            </div>
-                            <div class="row">
-                                <textarea name="message" cols="40" rows="10" placeholder="Message" maxlength="500" id="id_message">
-</textarea>
-                            </div>
-                            <input type="hidden" id="g-recaptcha-response" name="g-recaptcha-response">
-                            <div class="row">
-                                 <input type="submit" value="Submit">
-                            </div>
-                        </form>
+                        <div data-paperform-id="epicentertainment"></div><script>(function() {var script = document.createElement('script'); script.src = "https://paperform.co/__embed.min.js"; document.body.appendChild(script); })()</script>
                     </div>
                 </div>
 

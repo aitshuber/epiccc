@@ -70,81 +70,10 @@ pagename: employment
             <div class="con-form-map">
                 <div class="medium-12 column">
                     <div class="employee-form">
-
-
-                        <!-- START - Form Success Message -->
-                        <p class="js-form-success editable">Thank you for your application!</p>
-                        <!-- END - Form Success Message -->
-
-                        <form action="/success.html" method="POST" enctype="multipart/form-data" id="employment">
-                           
-                        
-                            <div class="row">
-                                <div class="medium-6 column">
-                                    <input type="text" name="first_name" placeholder="First Name" maxlength="100" required id="id_first_name">
-                                </div>
-                                <div class="medium-6 column">
-                                    <input type="text" name="last_name" placeholder="Last Name" maxlength="100" required id="id_last_name">
-                                </div>
-                            </div>
-
-                            <div class="row">
-                                <div class="medium-6 column">
-                                    <input type="text" name="phone_number" placeholder="Phone Number" required id="id_phone_number">
-                                </div>
-                                <div class="medium-6 column">
-                                    <input type="text" name="email" placeholder="Email" required id="id_email">
-                                </div>
-                            </div>
-
-                            <div class="row">
-                                <div class="medium-6 column">
-                                    <input type="text" name="home_address" placeholder="Home Address" maxlength="300" required id="id_home_address">
-                                </div>
-                                <div class="medium-6 column">
-                                    <input type="text" name="city" placeholder="City" maxlength="200" required id="id_city">
-                                </div>
-                            </div>
-
-                            <div class="row">
-                                <div class="medium-6 column">
-                                    <input type="text" name="state" placeholder="State" maxlength="150" required id="id_state">
-                                </div>
-                                <div class="medium-6 column">
-                                    <input type="text" name="zip" placeholder="Zip" required id="id_zip">
-                                </div>
-                            </div>
-
-                            <div class="row">
-                                <div class="medium-6 column">
-                                    <label class="editable" style="color: #fff"><strong>Please List Past Job
-                                        History</strong>
-                                    </label>
-                                    <textarea name="job_history" cols="40" rows="10" label="Please List Past Job History" maxlength="500" required id="id_job_history">
-</textarea>
-                                </div>
-                                <div class="medium-6 column">
-                                    <label class="editable" style="color: #fff"><strong>Please List 3
-                                        Professional Job References</strong>
-                                    </label>
-                                    <textarea name="references" cols="40" rows="10" label="Please List 3 Professional Job References" maxlength="500" required id="id_references">
-</textarea>
-                                </div>
-                            </div>
-                            <label class="editable" style="color: #fff"><strong>Please Attach Resume(250Mb Limit
-                                <span class="req">*</span>)</strong>
-                                <input type="file" name="upload">
-                            </label>
-                          <input type="hidden" name="inbox_key" value="epic-employment-form">
-                          <input type="hidden" name="_to" value="carlos@accoladesit.com">
-                          <input type="text" name="_gotcha" style="display: none;">
-                            <button type="submit">SUBMIT<span>
-                                <em class="fa fa-chevron-right"></em></span>
-                            </button>
-                        </form>
+<div data-paperform-id="epicemployment"></div><script>(function() {var script = document.createElement('script'); script.src = "https://paperform.co/__embed.min.js"; document.body.appendChild(script); })()</script>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-  {% include recaptcha.html %}   
+  {% include recaptcha.html %}
