@@ -1,18 +1,18 @@
-<!-- footer  --> 
-<script src="styles/assets/js/vendor/jquery.js"></script> 
+<!-- footer  -->
+<script src="styles/assets/js/vendor/jquery.js"></script>
 <script src="styles/assets/js/foundation.min.js"></script>
 <script>
 	  $(document).foundation();
 	</script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/3.2.5/javascripts/jquery.foundation.reveal.js"></script>
 <script src="styles/assets/js/slick.min.js"></script>
-<script src="styles/assets/js/jquery.tinycircleslider.js"></script> 
-<script src="styles/assets/js/jquery.colorbox.js"></script> 
-<script src="styles/assets/js/nicescroll.js"></script> 
-<script src="styles/assets/js/filterable.pack.js"></script> 
-<script src="styles/assets/js/wow.js"></script> 
-<script src="styles/assets/js/jquery.counterup.js"></script> 
-<script src="styles/assets/js/main.js"></script> 
+<script src="styles/assets/js/jquery.tinycircleslider.js"></script>
+<script src="styles/assets/js/jquery.colorbox.js"></script>
+<script src="styles/assets/js/nicescroll.js"></script>
+<script src="styles/assets/js/filterable.pack.js"></script>
+<script src="styles/assets/js/wow.js"></script>
+<script src="styles/assets/js/jquery.counterup.js"></script>
+<script src="styles/assets/js/main.js"></script>
 <script src="styles/assets/js/scripts.js"></script>
 <script src="styles/assets/js/cart.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
@@ -20,25 +20,42 @@
 
 
 <!-- include scripts -->
+{% if page.pagename == 'home' %}
+		<!-- Modal -->
+		<a href="#" data-reveal-id="specialModal" style="display:none">Click Me For A Modal</a>
 
+		<div id="specialModal" class="reveal-modal" data-reveal aria-labelledby="modalTitle" aria-hidden="true"
+			 role="dialog">
+		  {% for item in site.data.special_banner %}
+		   {% if item.enabled == true %}
+		   <img src="{{item.image}}" border="0" alt="" style="width:95%"/>
+		  {% endif %}
+		  {% endfor %}
+			<a class="close-reveal-modal" aria-label="Close">&#215;</a>
+		</div>
 		<!-- Modal -->
 		<a href="#" data-reveal-id="NotificationModal" style="display:none">Click Me For A Modal</a>
 
 		<div id="NotificationModal" class="reveal-modal" data-reveal aria-labelledby="modalTitle" aria-hidden="true"
 			 role="dialog">
 
-			<h4>Hours</h4>
-			<li>Monday-Thursday - Closed</li>
-			<li>Friday 5pm - 9pm</li>
-			<li>Saturday 11am - 10pm</li>
-			<li>Sunday 12pm - 6pm</li>
+			test
 			<a class="close-reveal-modal" aria-label="Close">&#215;</a>
 		</div>
+{% endif %}
 {% if page.pagename == 'home' %}
 		<script>
-			$(document).ready(function () {
-				$('#NotificationModal').foundation('reveal', 'open');
-			});
-		</script>
+		$(document).ready(function () {
+			// Open NotificationModal first
+			$('#NotificationModal').foundation('reveal', 'open');
 
+			// Set up an event listener for when the NotificationModal is closed
+			$('#NotificationModal').on('closed.fndtn.reveal', function () {
+			  // Delay opening the specialModal by 2 seconds
+			  setTimeout(function () {
+				$('#specialModal').foundation('reveal', 'open');
+			  }, 2000);
+			});
+		  });
+		</script>
 {% endif %}

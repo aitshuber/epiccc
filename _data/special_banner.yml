@@ -1,0 +1,4 @@
+- background-color: "#5a424a"
+  image: /uploads/deal.png
+  weight: 1
+  enabled: true
