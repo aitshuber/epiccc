@@ -1,4 +1,4 @@
-- month: November
-  image: /uploads/epic-monthly-november-01.png
+- month: December
+  image: /uploads/epic-december.png
   weight: 1
   enabled: true
