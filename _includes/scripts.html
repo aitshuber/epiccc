@@ -48,7 +48,8 @@
 		$(document).ready(function () {
 			// Open NotificationModal first
 			$('#NotificationModal').foundation('reveal', 'open');
-
+            {% for item in site.data.special_banner %}
+			   {% if item.enabled == true %}
 			// Set up an event listener for when the NotificationModal is closed
 			$('#NotificationModal').on('closed.fndtn.reveal', function () {
 			  // Delay opening the specialModal by 2 seconds
@@ -56,6 +57,8 @@
 				$('#specialModal').foundation('reveal', 'open');
 			  }, 2000);
 			});
+			{% endif %}
+			{% endfor %}
 		  });
 		</script>
 {% endif %}
