@@ -1,4 +1,4 @@
 - month: December
   image: /uploads/epic-december.png
   weight: 1
-  enabled: true
+  enabled: false
