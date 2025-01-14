@@ -55,11 +55,13 @@ pagename: home
     <!-- Special Banner -->
     {% if site.data.special_banner %}
     {% for item in site.data.special_banner %}
+    {% if item.enabled == true %}
     <section class="mountain_skating" style="background-image: url({{item.image}});background-size: contain;    background-color: {{item.background-color}}; ">
         <div class="row" style="height: 30em;">
 
         </div>
     </section>
+    {% endif %}
     {% endfor %}
     {% endif %}
     <!--Laser Tag-->
