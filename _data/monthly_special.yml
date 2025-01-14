@@ -1,4 +1,4 @@
 - month: January
   image: /uploads/january-1.png
   weight: 1
-  enabled: false
+  enabled: true
