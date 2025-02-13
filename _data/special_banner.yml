@@ -1,4 +1,4 @@
-- background-color: '#5a424a'
-  image: /uploads/deal.png
+- background-color: '#ffffff'
+  image: /uploads/epic-mardi-gras.png
   weight: 1
-  enabled: false
+  enabled: true
