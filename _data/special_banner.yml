@@ -1,4 +1,4 @@
 - background-color: '#ffffff'
   image: /uploads/epic-mardi-gras.png
   weight: 1
-  enabled: true
+  enabled: false
