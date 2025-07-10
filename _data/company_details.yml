@@ -9,7 +9,8 @@ social:
     link: https://www.instagram.com/epicfamilyentertainmentcenter/
     icon: fa-instagram
 hours:
-  - day: Monday - Thursday Closed
-  - day: Friday 5pm - 9pm
+  - day: Monday - Wednesday Closed
+  - day: Thursday 2pm - 8pm
+  - day: Friday 2pm - 9pm
   - day: Saturday 11am - 10pm
   - day: Sunday 12pm - 6pm
