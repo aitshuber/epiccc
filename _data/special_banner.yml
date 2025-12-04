@@ -1,4 +1,4 @@
 - background-color: '#180b0b'
   image: /uploads/kidcam.png
   weight: 1
-  enabled: true
+  enabled: false
